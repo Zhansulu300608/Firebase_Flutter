@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "54658743084",
+    "project_id": "justtutorials-3f993",
+    "storage_bucket": "justtutorials-3f993.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54658743084:android:7eed97f44bec67bc414a89",
+        "android_client_info": {
+          "package_name": "com.example.firabase_login_logout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEnmc1sOfC5MD70eSMeb6NqyJYJC3ruOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
