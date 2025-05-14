@@ -1,21 +1,26 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:flutter/foundation.dart';
 
 class AuthServices {
-  Future<UserCredential> signInWithGoogle() async {
-    final GoogleSignInAccount? gUser =
-        await GoogleSignIn(
-          clientId:
-              '54658743084-smhbe54kqv06u743jpiuvocdsv458amo.apps.googleusercontent.com',
-        ).signIn();
+  signInWithGoogle() async{
+    if (kIsWeb) {
+      GoogleAuthProvider googleProvider = GoogleAuthProvider();
+      googleProvider.setCustomParameters({'login_hint': 'user@example.com'});
 
-    final GoogleSignInAuthentication gAuth = await gUser!.authentication;
+      return await FirebaseAuth.instance.signInWithPopup(googleProvider);
+    } else {
+      final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
+      final GoogleSignInAuthentication gAuth = await gUser!.authentication;
+
 
     final credential = GoogleAuthProvider.credential(
       accessToken: gAuth.accessToken,
       idToken: gAuth.idToken,
     );
 
+ 
     return await FirebaseAuth.instance.signInWithCredential(credential);
+    }
   }
 }

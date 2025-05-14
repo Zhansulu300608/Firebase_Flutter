@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCYQeEY2u3mFktu69PoFSOKqZlfIIr605U',
-    appId: '1:54658743084:web:3395728c3622b876414a89',
-    messagingSenderId: '54658743084',
-    projectId: 'justtutorials-3f993',
-    authDomain: 'justtutorials-3f993.firebaseapp.com',
-    storageBucket: 'justtutorials-3f993.firebasestorage.app',
+    apiKey: 'AIzaSyAokYAM_OFWkCjtq_I0XRiegetwBR8YXkM',
+    appId: '1:1043635520327:web:29c8737c6a21433ab3c262',
+    messagingSenderId: '1043635520327',
+    projectId: 'project1-54cf2',
+    authDomain: 'project1-54cf2.firebaseapp.com',
+    storageBucket: 'project1-54cf2.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCEnmc1sOfC5MD70eSMeb6NqyJYJC3ruOI',
-    appId: '1:54658743084:android:7eed97f44bec67bc414a89',
-    messagingSenderId: '54658743084',
-    projectId: 'justtutorials-3f993',
-    storageBucket: 'justtutorials-3f993.firebasestorage.app',
+    apiKey: 'AIzaSyB7_LODJHxVWhBXWEjulGMNiCBAgVddaEw',
+    appId: '1:1043635520327:android:1df683399df9d8a9b3c262',
+    messagingSenderId: '1043635520327',
+    projectId: 'project1-54cf2',
+    storageBucket: 'project1-54cf2.firebasestorage.app',
   );
 
 }
